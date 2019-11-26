@@ -13,9 +13,9 @@ server:
 
 #logging:
 #  pattern:
-#    console: "%d - %msg%n" # ¿ØÖÆÌ¨ÖĞÈÕÖ¾µÄÊä³ö¸ñÊ½
+#    console: "%d - %msg%n" # æ§åˆ¶å°ä¸­æ—¥å¿—çš„è¾“å‡ºæ ¼å¼
 #  file:
-##    path: C:/Users/fancyyyy/Desktop/sellDataFile # ÅäÖÃÈÕÖ¾ÎÄ¼şµÄÊä³öÂ·¾¶£¬ÎÄ¼şÃûÄ¬ÈÏÎªspring.logging
-#    name: C:/Users/fancyyyy/Desktop/sellDataFile/sell.log # ÅäÖÃÈÕÖ¾ÎÄ¼şµÄÊä³öÂ·¾¶µÄÎÄ¼şÃû
+#    path: C:/Users/fancyyyy/Desktop/sellDataFile # é…ç½®æ—¥å¿—æ–‡ä»¶çš„è¾“å‡ºè·¯å¾„ï¼Œæ–‡ä»¶åé»˜è®¤ä¸ºspring.logging
+#    name: C:/Users/fancyyyy/Desktop/sellDataFile/sell.log # é…ç½®æ—¥å¿—æ–‡ä»¶çš„è¾“å‡ºè·¯å¾„çš„æ–‡ä»¶å
 #  level:
-#    com.fancy.sell.LoggerTest: debug # ÉèÖÃÈÕÖ¾µÄÊä³ö¼¶±ğ
+#    com.fancy.sell,LoggerTest: debug # è®¾ç½®æ—¥å¿—çš„è¾“å‡ºçº§åˆ«

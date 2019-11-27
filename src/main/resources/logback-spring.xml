@@ -34,7 +34,7 @@
         <!--滚动策略(按天输出日志)-->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
         <!--日志存放的路径-->
-            <fileNamePattern>C:/Users/fancyyyy/Desktop/sellDataFile/sellLog/info.%d.log</fileNamePattern>
+            <fileNamePattern>C:/Users/caoyi/Desktop/sellDataFile/sellLog/info.%d.log</fileNamePattern>
         </rollingPolicy>
     </appender>
 
@@ -52,7 +52,7 @@
         <!--滚动策略(按天输出日志)-->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--日志存放的路径-->
-            <fileNamePattern>C:/Users/fancyyyy/Desktop/sellDataFile/sellLog/error.%d.log</fileNamePattern>
+            <fileNamePattern>C:/Users/caoyi/Desktop/sellDataFile/sellLog/error.%d.log</fileNamePattern>
         </rollingPolicy>
     </appender>
 

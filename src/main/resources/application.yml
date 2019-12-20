@@ -6,6 +6,8 @@ spring:
     url: jdbc:mysql://localhost:3306/sell?serverTimezone=GMT%2B8&characterEncoding=utf-8&useSSL=false
   jpa:
     show-sql: true
+  jackson:
+    default-property-inclusion: non_null
 
 server:
   servlet:
@@ -18,4 +20,4 @@ server:
 #    path: C:/Users/fancyyyy/Desktop/sellDataFile # 配置日志文件的输出路径，文件名默认为spring.logging
 #    name: C:/Users/fancyyyy/Desktop/sellDataFile/sell.log # 配置日志文件的输出路径的文件名
 #  level:
-#    com.fancy.sell,LoggerTest: debug # 设置日志的输出级别
+#    com.fancy.sell.LoggerTest: debug # 设置日志的输出级别

@@ -6,6 +6,7 @@ import com.fancy.sell.dto.OrderDTO;
 import com.fancy.sell.enums.ResultEnum;
 import com.fancy.sell.exception.SellException;
 import com.fancy.sell.form.OrderForm;
+import com.fancy.sell.service.BuyerService;
 import com.fancy.sell.service.OrderService;
 import com.fancy.sell.utils.ResultVOUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -36,6 +37,9 @@ public class BuyerOrderController {
 
     @Autowired
     private OrderService orderService;
+
+    @Autowired
+    private BuyerService buyerService;
 
     //创建订单
     @PostMapping("/create")
@@ -75,6 +79,20 @@ public class BuyerOrderController {
     }
 
     //订单详情
+    @GetMapping("/detail")
+    public ResultVO<OrderDTO> detail(@RequestParam("openid") String openid,
+                                     @RequestParam("orderId") String orderId) {
+        OrderDTO orderDTO = buyerService.findOrderOne(openid, orderId);
+        return ResultVOUtil.success(orderDTO);
+
+    }
 
     //取消订单
+    @PostMapping("/cancel")
+    public ResultVO cancel(@RequestParam("openid") String openid,
+                           @RequestParam("orderId") String orderId) {
+        buyerService.cancelOrder(openid, orderId);
+        return ResultVOUtil.success();
+    }
+
 }

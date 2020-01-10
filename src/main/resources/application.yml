@@ -21,3 +21,11 @@ server:
 #    name: C:/Users/fancyyyy/Desktop/sellDataFile/sell.log # 配置日志文件的输出路径的文件名
 #  level:
 #    com.fancy.sell.LoggerTest: debug # 设置日志的输出级别
+
+wechat:
+  mpAppId: wxfb9e3debd2a6ef71
+  mpAppSecret: b420a5255611d7f2993e29b990bf98a6
+  mchid:
+  mchkey:
+  keyPath:
+  notifyUrl:
